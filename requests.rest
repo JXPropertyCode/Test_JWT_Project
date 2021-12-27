@@ -1,0 +1,33 @@
+# send request to get user data with the expiring Access Token
+GET http://localhost:8000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDU5LCJleHAiOjE2NDA1NzU0NzR9.OqnCQgARjOBWuqggN5kPNx-sC9k88HprvEfSzGD3S44
+
+###
+
+# deletes Refresh Token
+DELETE http://localhost:9000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDQ0fQ.qkgNMD0Rlve47CbCAzW9KpzNzStPLRGciMijY7d3xnY"
+}
+
+###
+
+# Creates expiring Access Tokens using Refresh Token
+POST http://localhost:9000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDQ0fQ.qkgNMD0Rlve47CbCAzW9KpzNzStPLRGciMijY7d3xnY"
+}
+
+###
+
+# gets the Access Token and Refresh Token
+POST http://localhost:9000/login
+Content-Type: application/json
+
+{
+    "username": "Johnny"
+}
