@@ -1,6 +1,6 @@
 # send request to get user data with the expiring Access Token
 GET http://localhost:8000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDU5LCJleHAiOjE2NDA1NzU0NzR9.OqnCQgARjOBWuqggN5kPNx-sC9k88HprvEfSzGD3S44
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NzIyLCJleHAiOjE2NDA1NzU3Mzd9.GX2KVZp-Dc6bePBBBwHbtLFcIMvuYInP_F1cU7fbBzU
 
 ###
 
@@ -9,7 +9,7 @@ DELETE http://localhost:9000/logout
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDQ0fQ.qkgNMD0Rlve47CbCAzW9KpzNzStPLRGciMijY7d3xnY"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1Njk5fQ.rnrtIHK9oy7ViDkHSDQDssHWMksYYINzOsbNvgao1j8"
 }
 
 ###
@@ -19,7 +19,7 @@ POST http://localhost:9000/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1NDQ0fQ.qkgNMD0Rlve47CbCAzW9KpzNzStPLRGciMijY7d3xnY"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obm55IiwiaWF0IjoxNjQwNTc1Njk5fQ.rnrtIHK9oy7ViDkHSDQDssHWMksYYINzOsbNvgao1j8"
 }
 
 ###
